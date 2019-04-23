@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical"
+    tools:context=".LabourPart.MenuallyLabourLogin">
+
+    <TextView
+        android:id="@+id/titleLeebeno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_70sdp"/>
+
+    <TextView
+        android:id="@+id/titleLabourName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLeebeno"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Welcome Radhe"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp" />
+
+    <RelativeLayout
+        android:id="@+id/layoutEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLabourName"
+        android:layout_marginTop="@dimen/_55sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_img_loing" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/editProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/edit_profile"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutViewMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutEditProfile"
+        android:layout_marginTop="@dimen/_25sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_img_loing" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/customerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/view_messages"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logoutImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logout"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_15sdp"
+        />
+
+
+</RelativeLayout>

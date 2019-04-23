@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="@dimen/_5sdp"
+    android:weightSum="1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_color="@color/gray"
+        app:civ_border_width=".5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/groupMemberImage"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/demo_image" />
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/groupMemberImage"
+        android:layout_toStartOf="@+id/btnGroupMemberleft"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:id="@+id/groupMemberName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:text="demo name"
+        android:gravity="center|left"
+        android:layout_gravity="center|left"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/_10sdp" />
+    <TextView
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnGroupMemberleft"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:background="@drawable/gray_rect_background"
+        android:text="@string/left_group"
+        android:textSize="@dimen/_8sdp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>

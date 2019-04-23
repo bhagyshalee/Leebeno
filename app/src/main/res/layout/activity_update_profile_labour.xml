@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_2sdp">
+
+        <ImageView
+            android:id="@+id/backSignUp"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/back_button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_weight="0.5"
+                android:fontFamily="sans-serif-medium"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/profile_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/changePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="right|center"
+                android:text="@string/change_password"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/profile_edit_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/edit" />
+
+                    </RelativeLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilePicUpdate"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:src="@drawable/user"
+                        app:civ_border_color="@color/darkGray"
+                        app:civ_border_width="0.5dp" />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="@string/name"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="LabelFor" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:drawableRight="@drawable/lock_blue"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:focusable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="@string/email_id"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="LabelFor" />
+
+                    <leebeno.com.leebeno.Common.MySpinner
+                        android:id="@+id/etSkillsLabour"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:entries="@array/skills"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="@string/skills"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="visible" />
+                    <!--
+                                        <EditText
+                                            android:visibility="gone"
+                                            android:editable="false"
+                                            android:clickable="false"
+                                            android:id="@+id/selected_skills"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="@color/colorPrimary"
+                                            android:textCursorDrawable="@null"
+                                            android:drawablePadding="@dimen/_10sdp"
+                                            android:fontFamily="sans-serif-light"
+                                            android:hint="@string/selected_skills"
+                                            android:focusable="false"
+                                            android:textSize="@dimen/_13sdp"
+                                            tools:ignore="LabelFor" />
+                    -->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerSkill"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="@string/description"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="LabelFor" />
+
+                    <EditText
+                        android:id="@+id/etMinimumPayPerHour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="@string/minimum_pay_per_hour"
+                        android:inputType="number"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="LabelFor" />
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:editable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="@string/your_location"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="LabelFor" />
+
+                    <EditText
+                        android:id="@+id/etStreetA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="@string/street"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_13sdp"
+                        tools:ignore="LabelFor" />
+
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/primary_circle_background"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="@string/save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

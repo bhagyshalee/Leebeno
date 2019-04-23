@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/navProfileText"
+        android:title="@string/myProfile" />
+    <item
+        android:id="@+id/navWallet"
+        android:title="@string/wallet" />
+    <item
+        android:id="@+id/navMyReviewRating"
+        android:title="@string/my_posted_reviews" />
+    <item
+        android:id="@+id/navReviewRating"
+        android:title="@string/my_reviews_and_ratings" />
+    <item
+        android:id="@+id/navEscalation"
+        android:title="@string/escalation" />
+
+    <item
+        android:id="@+id/navLogout"
+        android:title="@string/logout" />
+
+</menu>

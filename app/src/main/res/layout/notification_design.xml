@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    android:orientation="vertical"
+    android:id="@+id/Layoutt"
+    android:weightSum="1">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:padding="@dimen/_3sdp"
+        android:text="notification"
+        android:id="@+id/notiTitle"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.6"
+        android:gravity="right"
+        android:padding="@dimen/_5sdp"
+        android:text="notification"
+        android:id="@+id/notiHoursAgo"/>
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.4"
+        android:padding="@dimen/_3sdp"
+        android:text="notification"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/notiBody"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.4"
+        android:paddingLeft="@dimen/_5sdp"
+        android:text="notification"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/notiDateTime"/>
+
+
+</LinearLayout>

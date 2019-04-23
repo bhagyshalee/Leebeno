@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:id="@+id/layoutBid"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/titleBid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/priceBid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptionBid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="@dimen/_5sdp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="@dimen/_10sdp" />
+    <TextView
+        android:id="@+id/rejectedBidReq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/rejected"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

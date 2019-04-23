@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+            <ImageView
+                android:id="@+id/crossPopup"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="right"
+                android:src="@drawable/crossimg_blue" />
+
+            <ImageView
+                android:id="@+id/imagePointPeck"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/points_peck"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawablePadding="@dimen/_3sdp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="50"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/titlePopup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="you have transfer $50 for this job post  ..So are you ready for this transaction"
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:id="@+id/suggePoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="@color/red"
+                android:text="@string/_100_points_is_min_for_transfer"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/primary_circle_background"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_8sdp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--
+        <ImageView
+            android:id="@+id/crossDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cross_icon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/_10sdp"
+            />
+    -->
+</RelativeLayout>

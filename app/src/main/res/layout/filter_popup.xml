@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/_5sdp"
+                >
+            <ImageView
+                android:id="@+id/btnCancel"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/cross_icon"
+                android:layout_gravity="right"/>
+            </LinearLayout>
+
+            <leebeno.com.leebeno.Common.MySpinner
+                android:id="@+id/etSkillsLabour"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="sans-serif-light"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_13sdp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerSkillJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/payment_type" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioPayPerH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/pay_per_hour"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <RadioButton
+                        android:id="@+id/radiojobPayRange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/job_pay_range"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <RadioButton
+                        android:id="@+id/radioFixAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/fixed_amount"
+                        android:textSize="@dimen/_8sdp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etPayPerHour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/enter_amount_for_pay_per_hour"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_13sdp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/etFixAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/enter_fix_amount_for_job_biding"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone"
+                tools:ignore="LabelFor" />
+
+            <LinearLayout
+                android:id="@+id/layoutRangeBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/etMinValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginRight="@dimen/_50sdp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/border_gray_f"
+                        android:focusable="false"
+                        android:hint="$"
+                        android:inputType="number"
+                        android:padding="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <EditText
+                        android:id="@+id/etMaxValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/border_gray_f"
+                        android:focusable="false"
+                        android:hint="$"
+                        android:inputType="number"
+                        android:padding="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_8sdp" />
+
+                </LinearLayout>
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                    android:id="@+id/rangeSeekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:bar_color="#8990C4"
+                    app:bar_highlight_color="#2434AD"
+                    app:corner_radius="5"
+                    app:data_type="_integer"
+                    app:gap="100"
+                    app:left_thumb_color="#1A246D"
+                    app:left_thumb_color_pressed="#030B47"
+                    app:max_value="100000"
+                    app:min_value="50"
+                    app:right_thumb_color="#1A246D"
+                    app:right_thumb_color_pressed="#030B47" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableRight="@drawable/calendar"
+                android:focusable="false"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/start_date"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_13sdp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/etYourLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawablePadding="@dimen/_10sdp"
+                android:focusable="false"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/location"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_13sdp"
+                tools:ignore="LabelFor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+<!--
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.32"
+                    android:background="@drawable/primary_circle_background"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textAllCaps="false"/>
+-->
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/primary_circle_background"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/reset"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/btnApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/primary_circle_background"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/apply"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

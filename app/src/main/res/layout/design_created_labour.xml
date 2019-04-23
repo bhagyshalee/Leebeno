@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="horizontal"
+    android:id="@+id/layoutProfileReview"
+    android:weightSum="3">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerVertical="true"
+        app:civ_border_color="@color/pruple"
+        app:civ_border_width="0.5dp"
+        android:id="@+id/labourProfile"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/demo_image"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_toStartOf="@+id/add_group"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:id="@+id/fsafsdaf"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/labourProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/labourName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_2sdp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/createdDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:textSize="@dimen/_8sdp"
+            android:padding="@dimen/_2sdp" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/add_group"
+        android:layout_toStartOf="@+id/delete"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/ic_group_add"
+        android:layout_gravity="center"
+        android:padding="@dimen/_8sdp"/>
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/delete_black"
+        android:layout_gravity="center"
+        android:padding="@dimen/_8sdp" />
+
+</RelativeLayout>

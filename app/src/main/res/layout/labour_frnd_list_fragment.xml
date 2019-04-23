@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPart.Fragments.ConnectionsFragments.FriendListFragment">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/labour_friendlist_title"
+        android:text="group admin you are friend with"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/labour_friendlist_title"
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerFriendList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:layout_below="@+id/labour_friendlist_title"
+        android:id="@+id/text_empty"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:text="@string/you_don_t_have_any_request"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

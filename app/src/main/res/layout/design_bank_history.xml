@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/titleTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/priceTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/_5sdp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="right"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transactionId"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/debitFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <TextView
+            android:id="@+id/debitOnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+
+</LinearLayout>

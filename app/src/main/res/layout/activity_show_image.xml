@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+    <ImageView
+        android:id="@+id/backSignUp"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/back_button" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/imageShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_image" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:padding="@dimen/_10sdp"-->
+    <!--android:orientation="vertical">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/cardAdmin"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_400sdp"-->
+    <!--app:cardCornerRadius="@dimen/_5sdp"-->
+    <!--android:padding="@dimen/_10sdp">-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/emptyLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_gravity="center"-->
+    <!--&gt;-->
+    <!---->
+    <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+</LinearLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Leebeno</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile_text">Profile</string>
+    <string name="myProfile">Profile</string>
+    <string name="home_text">Home</string>
+    <string name="addlabour_text">Add Labour</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">Ok</string>
+    <string name="logout_confirmation_text">Do you really want to logout</string>
+    <string name="editLabour">Edit Labour</string>
+    <string name="addToGroup">Add to group</string>
+    <string name="laboursrequest">Labour\'s Request</string>
+    <string name="saved_jobtext">Saved Job</string>
+    <string name="send_feedback_text">Send Feedback</string>
+    <string name="about_text">About</string>
+    <string name="customer_text">Customer</string>
+    <string name="user_name">User Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="submit">Submit</string>
+    <string name="labour">Labour</string>
+    <string name="labours">Labours</string>
+    <string name="group_admin">Group Admin</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="sign_up_caps">SIGN UP</string>
+    <string name="sign_up_small">Sign Up</string>
+    <string name="verify">Verify</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="selected_skills">Selected Skills</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Vietnamese</string>
+
+    <string name="your_location">Your Location</string>
+    <string name="job_location">Job Location</string>
+    <string name="street">House No./Street/landmark</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="skills">Skills</string>
+    <string name="cancel">Cancel</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="alert">Alert</string>
+    <string name="progress_show">Please Wait...</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="upload_id_proof">upload Id proof</string>
+    <string name="id_proof_des">Government ID proof,Selfi with ID,written document like joining date etc.</string>
+    <string name="signup_term_condi_text">Read privacy policy and agree for terms and conditions</string>
+    <string name="wallet_transfer_confirmation">Do you want to transfer to wallet ?</string>
+    <string name="minimum_points_confirmation">You don\'t have sufficient points</string>
+    <string name="network_error_msg">Sorry! Not connected to internet</string>
+    <string name="api_hiting">Please wait...</string>
+
+    <string-array name="skills">
+        <item>Select skills</item>
+    </string-array>
+</resources>

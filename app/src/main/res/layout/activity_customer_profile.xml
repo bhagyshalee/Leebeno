@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    tools:context=".Signup">
+    <LinearLayout
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:padding="@dimen/_3sdp"
+            android:id="@+id/backSignUp"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/profile_text"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparentBlue"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:padding="@dimen/_5sdp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/customerProfile"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:src="@drawable/demo_image"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.01"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="0.99">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/customerName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:text="Charls. "
+                                    android:textStyle="bold" />
+
+                                <RatingBar
+                                    android:id="@+id/customerRatingBar"
+                                    style="?android:attr/ratingBarStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:isIndicator="true"
+                                    android:numStars="5"
+                                    android:theme="@style/RatingBar" />
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/address"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold"
+                                android:layout_marginTop="@dimen/_3sdp"/>
+
+                            <TextView
+                                android:id="@+id/addressValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:fontFamily="sans-serif-light"
+                                android:text="rtbreg fdfd vb fdgreb vb rb"
+                                android:textSize="@dimen/_8sdp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titleReview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/review"
+                            android:textColor="@color/blue"
+                            android:padding="@dimen/_10sdp"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/reviewRecycler"
+                            android:layout_width="match_parent"
+                            android:fadeScrollbars="false"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_5sdp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_450sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/post"
+                        android:textColor="@color/blue"
+                        android:padding="@dimen/_7sdp"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                    <android.support.design.widget.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayoutCustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            app:tabSelectedTextColor="@color/white"
+                            app:tabIndicatorColor="@color/colorPrimary"
+                            app:tabTextAppearance="@style/TabTextAppearance"
+                            app:tabBackground="@drawable/tab_selector_color"
+                            app:tabTextColor="@color/gray"/>
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pagerBookingCustomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

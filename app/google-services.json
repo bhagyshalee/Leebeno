@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "337106035982",
+    "firebase_url": "https://leee-ba6cc.firebaseio.com",
+    "project_id": "leee-ba6cc",
+    "storage_bucket": "leee-ba6cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337106035982:android:e572f7d7778cd424",
+        "android_client_info": {
+          "package_name": "leebeno.com.leebeno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337106035982-m9uvm12e4atunv37fk205pidvo7nfkp7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "leebeno.com.leebeno",
+            "certificate_hash": "2c8d0822274ea82fbf62ffdf274d88763f750731"
+          }
+        },
+        {
+          "client_id": "337106035982-vdlf2dn1qllkgljnhsgp4ek6lkk81i6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgd9qmmmjGwXCPaCvfhgtMYAvPxErPUM8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337106035982-vdlf2dn1qllkgljnhsgp4ek6lkk81i6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

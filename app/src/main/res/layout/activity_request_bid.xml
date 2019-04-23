@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    tools:context=".Signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/backSignUp"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_weight="0.1"
+                android:src="@drawable/back_button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_weight="0.9"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/bid_detail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                 >
+
+                    <TextView
+                        android:id="@+id/providerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="Labour Name"
+                        />
+                    <TextView
+                        android:id="@+id/providerPostedTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="29 sept 2038" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/estimationTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="left"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="Time estimation 1 week" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_weight="0.7"
+                        android:textSize="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/green_rect_background"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_gravity="right|center"
+                        android:text="@string/message"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/estimationCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Budget $275" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:text="@string/comment_queries" />
+                <TextView
+                    android:id="@+id/commentQuery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left"
+                    android:textSize="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="ebfkgbre  rgrg grtg rt gtr grtgrt g rtgrt grt g bhyt ju  u u ku kjyu j yujyujyu" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btnAccept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/primary_circle_background"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        android:text="@string/accept"/>
+                    <Button
+                        android:id="@+id/btnReject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/round_border"
+                        android:textColor="@color/gray"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_40sdp"
+                        android:text="@string/reject" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
